@@ -1,0 +1,413 @@
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+body{
+    background: rgb(7, 7, 7);
+    height: 100dvh;
+}
+html{
+    scroll-behavior: smooth;
+}
+header img{
+    width: 50px;
+    max-width: 100%;
+    height: 50px;
+    border-radius: 50%;
+}
+.header{
+    padding: .40rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.header ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 15px;
+}
+.header ul li a{
+    padding: .17rem;
+    text-decoration: none;
+    color: black;
+    opacity: 1;
+    transition: .20s opacity;
+    font-size: 11pt;
+}
+.header ul li a:hover{
+    opacity: 0.7;
+}
+.header .logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+}
+h4{
+    font-size: 12pt;
+}
+main{
+    padding-top: 3rem;
+    width: 100%;
+    height: auto;
+    color: white;
+}
+h1{
+    color: white;
+
+}
+.cap{
+    background: url('IMG/logo\ \(3\).png');
+    width: 100%;
+    height: 66vh;
+    background-size: 100% 100%;
+    animation: cap 120s ease-in infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    object-fit: cover;
+}
+
+@keyframes cap{
+    0%{
+        background: url('IMG/logo\ \(3\).png');
+        background-size: 100% 100%;}
+    25%{
+        background: url('IMG/logo\ \(2\).png');
+        background-size: 100% 100%;}
+    50%{
+        background: url('IMG/logo\ \(1\).png');
+        background-size: 100% 100%;}
+    75%{
+        background: url('IMG/rings.png');
+        background-size: 100% 100%;}
+    100%{
+        background: url('IMG/Bag.jpg');
+        background-size: 100% 100%;}
+}
+
+main .cap h2{
+    color: white;
+    font: italic 33pt 'cambria';
+    text-align: center;
+    margin-bottom: 2rem;
+}
+main .cap p{
+    text-align: center;
+    color: white;           
+}
+main #perfile{
+    margin: auto;
+}
+.main .makeup img, .main .bags img{
+    width: 220px;
+    height: 222px;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 10px rgba(0 , 0, 0, .1);
+    transition: .30s transform;
+    object-fit: cover;
+}
+.main .makeup img:hover,.main .bags img:hover, .main .rigns img:hover{
+    transform: scale(1.1);
+}
+img{
+    max-width: 100%;
+    background: white;
+    height: auto;
+}
+.main{
+    margin: 1rem auto auto;
+    width: 100%;
+    height: auto;
+}
+.main .makeup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: .70rem;
+}
+.main .makeup ul{
+    margin: 2rem 0;
+    list-style-type: none;
+    background: rgba(20, 20, 20);
+    padding: .60rem 0;
+    width: 60%;
+    border-radius: 20px;
+}
+.main .makeup ul li{
+    margin: .30rem 0;
+    cursor: default;
+    transition: .20s ease;
+    padding: .40rem;
+    color: white;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+}
+.main .makeup ul li:hover{
+    margin: .30rem 0 .30rem 1rem;
+    background: rgba(7, 7, 7);
+}
+.main .makeup .contents{
+    width: 35%;
+}
+.main .makeup .imgs{
+    width: 58%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap-reverse;
+}
+.main h2{
+    font-size: 18pt;
+}
+h1{
+    text-align: center;
+    margin-bottom: 1.3rem;
+    font-size: 22pt;
+    text-transform: uppercase;
+}
+.main .makeup .contents span{
+    font: italic 10pt arial;
+}
+.main .bags{
+    margin: 2.5rem auto;
+    height: auto;
+    background: url('IMG/logo\ \(2\).png');
+    background-size: 100% 100%;
+    object-fit: cover;
+    color: black;
+    padding: 3rem .70rem;
+}
+.main .bags .imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.main .bags .imgs .prices{
+    text-align: center;
+}
+.main h6{
+    font-size: 13pt;
+    margin: 0 auto;
+}
+.main .bags .contents p{
+    margin: 1.3rem auto;
+}
+.main .bags .imgs p{
+    margin: .30rem auto;
+}
+.main .rings{
+    margin: auto;
+    width: 100%;
+    padding: .70rem;
+}
+.main .rings .imgs{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 11px;
+    width: 100%;
+}
+.main .rings .imgs .price{
+    text-align: center;
+    width: 50%;
+    height: auto;
+}
+.main .rings img{
+    width: 500px;
+    height: 350px;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 10px rgba(0 , 0, 0, .1);
+    transition: .30s transform;
+    margin: .30rem auto;
+    object-fit: cover;
+}
+.main .rings button{
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: .24s background;
+    border-radius: 20px;
+}
+.main .rings button:hover{
+    background: white;
+    color: black;
+}
+.main .rings .contents p{
+    margin: 1.3rem auto;
+}
+main #about{
+    width: 100%;
+    margin: 3rem auto;
+    padding: .70rem;
+}
+main #about h2{
+    text-align: center;
+}
+main #about h3{
+    margin-bottom: .70rem;
+}
+main #about p{
+    margin: .30rem auto;
+}
+main #contact{
+    width: 100%;
+    height: 100%;
+    margin: 2rem auto;
+    background: url('IMG/logo\ \(2\).png');
+    background-size: 100% 100%;
+    object-fit: cover;
+    padding: .70rem;
+    color: black;
+}
+main #contact .perfile h1{
+    color: black;
+}
+main #contact .perfile{
+    text-align: center;
+}
+main #contact .perfile img{
+    width: 200px;
+    height: 170px;
+    margin: .50rem auto;
+    border-radius: 50%;
+    background: transparent;
+}
+form{
+    width: 40%;
+    margin: 1rem auto;
+}
+input{
+    display: flex;
+    border-radius: 14px;
+    outline: none;
+    border: none;
+    margin: .30rem auto .80rem;
+    width: 100%;
+    height: 25px;
+    padding: .34rem;
+}
+textarea{
+    resize: none;
+    outline: none;
+    border-radius: 12px;
+    padding: .35rem;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    margin: .30rem auto .50rem;
+}
+main #about h2, main #contact h2{
+    text-align: center;
+    margin: 1rem auto;
+}
+form button{
+    width: 40%;
+    height: 25px;
+    background: dodgerblue;
+    color: white;
+    border-radius: 13px;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid dodgerblue;
+    transition: .20s background;
+    margin: auto;
+}
+form button:hover{
+    background: transparent;
+    color: dodgerblue;
+}
+footer .footer{
+    width: 100%;
+    background: white;
+    color: black;
+    padding: .40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20pt;
+    position: relative;
+}
+footer .footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20pt;
+    list-style-type: none;
+}
+footer .footer ul li a{
+    text-decoration: none;
+}
+footer .footer ul li a img{
+    width: 30px;
+    height: auto;
+    max-width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+footer .footer p{
+    margin: -.60rem auto 3rem;
+    font-size: 13pt;
+    text-align: center;
+}
+a.back{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 10pt;
+}
+@media (max-width: 555px){
+    h4{
+        display: none;
+    }
+    .header{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .cap{
+        background: url('IMG/logo\ \(1\).png');
+        width: 100%;
+        height: 45vh;
+        background-size: 100% 100%;
+        animation: cap 100s ease-in infinite;
+        object-fit: cover;
+    }
+    .main .rings img{
+        width: 500px;
+        height: auto;
+        max-width: 100%;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px 10px rgba(0 , 0, 0, .1);
+        transition: .30s transform;
+    }
+}
